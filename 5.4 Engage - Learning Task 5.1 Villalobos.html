@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seven SVG Geometric Art Designs</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1eb;
+    color: #243238;
+  }
+  h1 { text-align: center; margin: 0 0 8px; font-size: 28px; }
+  .subtitle { text-align: center; margin: 0 0 28px; color: #657477; }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .art-card {
+    background: #fff;
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(34, 48, 52, .09);
+    text-align: center;
+  }
+  .art-card h2 { font-size: 15px; margin: 0 0 12px; }
+  svg {
+    display: block;
+    width: 200px;
+    height: 300px;
+    max-width: 100%;
+    margin: auto;
+    border: 2px solid #e7a09a;
+    background: #fffaf5;
+  }
+  .note { text-align: center; color: #758184; font-size: 12px; margin-top: 24px; }
+</style>
+</head>
+<body>
+<h1>Geometric SVG Art Gallery</h1>
+<p class="subtitle">Seven colorful designs made with SVG shapes and lines</p>
+
+<main class="gallery">
+  <!-- 1. Line and Circle -->
+  <section class="art-card">
+    <h2>1. Line and Circle</h2>
+    <svg viewBox="0 0 200 300" role="img" aria-label="Circles connected by curved and straight lines">
+      <rect width="200" height="300" fill="#fffaf5"/>
+      <g fill="none" stroke="#ef8f88" stroke-width="7">
+        <path d="M18 54 C18 12 86 12 86 54 S154 96 154 54 S190 12 190 54"/>
+        <path d="M18 150 C18 108 86 108 86 150 S154 192 154 150 S190 108 190 150"/>
+        <path d="M18 246 C18 204 86 204 86 246 S154 288 154 246"/>
+      </g>
+      <g fill="#12b7b1" stroke="#fff" stroke-width="5">
+        <circle cx="38" cy="54" r="20"/><circle cx="116" cy="54" r="20"/>
+        <circle cx="76" cy="150" r="20"/><circle cx="164" cy="150" r="20"/>
+        <circle cx="38" cy="246" r="20"/><circle cx="116" cy="246" r="20"/>
+      </g>
+      <g stroke="#ef8f88" stroke-width="3">
+        <path d="M18 82 V112 H95"/><path d="M105 178 V210 H185"/>
+        <path d="M18 274 H78"/>
+      </g>
+    </svg>
+  </section>
+
+  <!-- 2. Circle and Rectangle -->
+  <section class="art-card">
+    <h2>2. Circle and Rectangle</h2>
+    <svg viewBox="0 0 200 300" role="img" aria-label="Rows of circles inside colorful rectangles">
+      <rect width="200" height="300" fill="#fffaf5"/>
+      <g fill="#12b7b1" stroke="#ef8f88" stroke-width="5">
+        <rect x="5" y="5" width="190" height="88" rx="3"/>
+        <rect x="5" y="106" width="190" height="88" rx="3"/>
+        <rect x="5" y="207" width="190" height="88" rx="3"/>
+      </g>
+      <g fill="#f49a8e">
+        <circle cx="35" cy="34" r="12"/><circle cx="100" cy="34" r="12"/><circle cx="165" cy="34" r="12"/>
+        <circle cx="67" cy="65" r="12"/><circle cx="133" cy="65" r="12"/>
+        <circle cx="35" cy="135" r="12"/><circle cx="100" cy="135" r="12"/><circle cx="165" cy="135" r="12"/>
+        <circle cx="67" cy="166" r="12"/><circle cx="133" cy="166" r="12"/>
+        <circle cx="35" cy="236" r="12"/><circle cx="100" cy="236" r="12"/><circle cx="165" cy="236" r="12"/>
+        <circle cx="67" cy="267" r="12"/><circle cx="133" cy="267" r="12"/>
+      </g>
+    </svg>
+  </section>
+
+  <!-- 3. Polyline and Circle -->
+  <section class="art-card">
+    <h2>3. Polyline and Circle</h2>
+    <svg viewBox="0 0 200 300" role="img" aria-label="Zigzag polylines with circles">
+      <rect width="200" height="300" fill="#fffaf5"/>
+      <g fill="none" stroke-width="12" stroke-linejoin="miter">
+        <polyline points="0,25 25,5 50,25 75,5 100,25 125,5 150,25 175,5 200,25" stroke="#12b7b1"/>
+        <polyline points="0,105 25,85 50,105 75,85 100,105 125,85 150,105 175,85 200,105" stroke="#f3c84c"/>
+        <polyline points="0,185 25,165 50,185 75,165 100,185 125,165 150,185 175,165 200,185" stroke="#ef8f88"/>
+        <polyline points="0,265 25,245 50,265 75,245 100,265 125,245 150,265 175,245 200,265" stroke="#12b7b1"/>
+      </g>
+      <g fill="#b8b1a5" stroke="#fff" stroke-width="3">
+        <circle cx="25" cy="65" r="13"/><circle cx="100" cy="65" r="13"/><circle cx="175" cy="65" r="13"/>
+        <circle cx="62" cy="145" r="13"/><circle cx="138" cy="145" r="13"/>
+        <circle cx="25" cy="225" r="13"/><circle cx="100" cy="225" r="13"/><circle cx="175" cy="225" r="13"/>
+      </g>
+    </svg>
+  </section>
+
+  <!-- 4. Polygon and Ellipse -->
+  <section class="art-card">
+    <h2>4. Polygon and Ellipse</h2>
+    <svg viewBox="0 0 200 300" role="img" aria-label="Layered colorful polygons and oval shapes">
+      <rect width="200" height="300" fill="#fffaf5"/>
+      <polygon points="0,0 25,24 50,0 75,24 100,0 125,24 150,0 175,24 200,0 200,48 175,72 150,48 125,72 100,48 75,72 50,48 25,72 0,48" fill="#12b7b1"/>
+      <polygon points="0,88 25,64 50,88 75,64 100,88 125,64 150,88 175,64 200,88 200,122 175,146 150,122 125,146 100,122 75,146 50,122 25,146 0,122" fill="#f3c84c"/>
+      <polygon points="0,166 25,142 50,166 75,142 100,166 125,142 150,166 175,142 200,166 200,200 175,224 150,200 125,224 100,200 75,224 50,200 25,224 0,200" fill="#ef8f88"/>
+      <polygon points="0,244 25,220 50,244 75,220 100,244 125,220 150,244 175,220 200,244 200,300 0,300" fill="#12b7b1"/>
+      <g fill="#b9b1a7" stroke="#fff" stroke-width="3">
+        <ellipse cx="30" cy="44" rx="12" ry="18"/><ellipse cx="100" cy="44" rx="12" ry="18"/><ellipse cx="170" cy="44" rx="12" ry="18"/>
+        <ellipse cx="65" cy="122" rx="13" ry="22"/><ellipse cx="140" cy="122" rx="13" ry="22"/>
+        <ellipse cx="30" cy="200" rx="12" ry="18"/><ellipse cx="100" cy="200" rx="12" ry="18"/><ellipse cx="170" cy="200" rx="12" ry="18"/>
+        <ellipse cx="65" cy="270" rx="13" ry="20"/><ellipse cx="140" cy="270" rx="13" ry="20"/>
+      </g>
+    </svg>
+  </section>
+
+  <!-- 5. Circle, Line and Rectangle -->
+  <section class="art-card">
+    <h2>5. Circle, Line and Rectangle</h2>
+    <svg viewBox="0 0 200 300" role="img" aria-label="Circles above vertical lines inside horizontal rectangles">
+      <rect width="200" height="300" fill="#fffaf5"/>
+      <g fill="#12b7b1" stroke="#ef8f88" stroke-width="5">
+        <rect x="5" y="5" width="190" height="82"/>
+        <rect x="5" y="109" width="190" height="82"/>
+        <rect x="5" y="213" width="190" height="82"/>
+      </g>
+      <g fill="#f49a8e">
+        <circle cx="27" cy="30" r="12"/><circle cx="63" cy="30" r="12"/><circle cx="100" cy="30" r="12"/><circle cx="137" cy="30" r="12"/><circle cx="173" cy="30" r="12"/>
+        <circle cx="27" cy="134" r="12"/><circle cx="63" cy="134" r="12"/><circle cx="100" cy="134" r="12"/><circle cx="137" cy="134" r="12"/><circle cx="173" cy="134" r="12"/>
+        <circle cx="27" cy="238" r="12"/><circle cx="63" cy="238" r="12"/><circle cx="100" cy="238" r="12"/><circle cx="137" cy="238" r="12"/><circle cx="173" cy="238" r="12"/>
+      </g>
+      <g stroke="#ef8f88" stroke-width="4">
+        <path d="M27 45 V99 M63 45 V99 M100 45 V99 M137 45 V99 M173 45 V99"/>
+        <path d="M27 149 V203 M63 149 V203 M100 149 V203 M137 149 V203 M173 149 V203"/>
+        <path d="M27 253 V295 M63 253 V295 M100 253 V295 M137 253 V295 M173 253 V295"/>
+      </g>
+    </svg>
+  </section>
+
+  <!-- 6. Polyline and Polygon -->
+  <section class="art-card">
+    <h2>6. Polyline and Polygon</h2>
+    <svg viewBox="0 0 200 300" role="img" aria-label="Large angular polygon shapes with zigzag lines">
+      <rect width="200" height="300" fill="#fffaf5"/>
+      <polygon points="0,0 200,0 200,300 0,300 40,250 0,200 40,150 0,100 40,50" fill="#12b7b1"/>
+      <polygon points="200,0 160,50 200,100 160,150 200,200 160,250 200,300" fill="#ef8f88"/>
+      <g fill="none" stroke="#f3c84c" stroke-width="12" stroke-linejoin="miter">
+        <polyline points="15,15 55,55 15,95 55,135 15,175 55,215 15,255 55,295"/>
+        <polyline points="185,15 145,55 185,95 145,135 185,175 145,215 185,255 145,295"/>
+      </g>
+      <polygon points="65,70 100,45 135,70 135,125 100,150 65,125" fill="#ef8f88" stroke="#fffaf5" stroke-width="5"/>
+      <polygon points="65,180 100,155 135,180 135,235 100,260 65,235" fill="#12b7b1" stroke="#fffaf5" stroke-width="5"/>
+    </svg>
+  </section>
+
+  <!-- 7. All five shape types -->
+  <section class="art-card">
+    <h2>7. Circle, Rectangle, Polyline, Polygon and Ellipse</h2>
+    <svg viewBox="0 0 200 300" role="img" aria-label="Combined geometric art using circles, rectangles, polylines, polygons and ellipses">
+      <rect width="200" height="300" fill="#12b7b1"/>
+      <g stroke="#ef8f88" stroke-width="4">
+        <rect x="8" y="8" width="184" height="75" fill="#12b7b1"/>
+        <rect x="8" y="217" width="184" height="75" fill="#ef8f88"/>
+      </g>
+      <g stroke="#f3c84c" stroke-width="4">
+        <line x1="35" y1="8" x2="35" y2="105"/><line x1="80" y1="8" x2="80" y2="105"/>
+        <line x1="125" y1="8" x2="125" y2="105"/><line x1="170" y1="8" x2="170" y2="105"/>
+      </g>
+      <g fill="#f49a8e">
+        <circle cx="35" cy="28" r="12"/><circle cx="80" cy="28" r="12"/><circle cx="125" cy="28" r="12"/><circle cx="170" cy="28" r="12"/>
+      </g>
+      <polygon points="0,135 25,110 50,135 75,110 100,135 125,110 150,135 175,110 200,135 200,165 175,190 150,165 125,190 100,165 75,190 50,165 25,190 0,165" fill="#ef8f88"/>
+      <polyline points="0,205 25,185 50,205 75,185 100,205 125,185 150,205 175,185 200,205" fill="none" stroke="#f3c84c" stroke-width="8"/>
+      <g fill="#b8b1a5" stroke="#fffaf5" stroke-width="3">
+        <ellipse cx="30" cy="255" rx="13" ry="22"/><ellipse cx="100" cy="255" rx="13" ry="22"/><ellipse cx="170" cy="255" rx="13" ry="22"/>
+      </g>
+      <circle cx="100" cy="150" r="18" fill="#f3c84c" stroke="#fffaf5" stroke-width="4"/>
+    </svg>
+  </section>
+</main>
+<p class="note">Each artwork uses an SVG viewBox of 200 × 300. Save this file as an .html file and open it in a browser.</p>
+</body>
+</html>
